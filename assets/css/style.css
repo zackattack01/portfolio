@@ -15,7 +15,6 @@
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-
 ::-moz-selection {
     background: #f2c2c9;
     color: #a4003a;
@@ -42,15 +41,23 @@
 }
 
 .centered {
-	text-align: center
+  text-align: center
+}
+
+.img-center {
+  margin-left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate)(-50%);
+  -o-transform: translate)(-50%);
 }
 
 .mt {
-	margin-top: 80px;
+  margin-top: 80px;
 }
 
 .mb {
-	margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 /* ==========================================================================
@@ -68,48 +75,74 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 700;
+  font-weight: 700;
     color: #4a4a4a;
 }
 
 
 .navbar-brand {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 .navbar-default .navbar-brand {
-	color: #1abc9c;
+  color: white;
 }
 
 .navbar-default {
-	background-color: transparent;
-	border-color: transparent;
+  background-color: transparent;
+  border-color: transparent;
 }
 
+
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #1abc9c;
-	background-color: transparent;
-	border-bottom: 2px solid #1abc9c
+  color: white;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  box-shadow: 0 0 2px white;
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: #1abc9c;
+  color: white;
+  text-shadow: 0 0 2px black;
 }
+
+a.poke-link h4 {
+  color: #A11111;
+  text-shadow: -2px -2px 2px slategrey;
+  display: inline-block;
+}
+
+a.poke-link h4:hover, a.navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
+  color: #EBEBEB !important;
+  text-shadow: 0 0 5px black;
+}
+
+.dark-nav a {
+  color: black !important;
+  text-shadow: 0 0 5px #EBEBEB !important;
+  border-bottom-color: black !important;
+}
+
+.dark-nav a:hover {
+  text-shadow: 0 0 5px black !important;
+}
+
+a:hover { text-decoration: none; }
 
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/back.jpg) no-repeat center top;
-	margin-top: -70px;
-	padding-top: 250px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 650px;
-	width: 100%;
-	
+  background: url(../img/jelly_sized.png) no-repeat center top;
+  margin-top: -70px;
+  padding-top: 250px;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -122,55 +155,55 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #headerwrap h1 {
-	color:#ffffff;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	letter-spacing: 4px;
-	font-size: 80px;
-	font-weight: bold;
+  color:black;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  letter-spacing: 4px;
+  font-size: 80px;
+  font-weight: bold;
 }
 
 #headerwrap h4 {
-	font-weight: 400;
-	color: #ffffff
+  font-weight: 400;
+  color: #ffffff
 }
 
 #social {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-color: #f2f2f2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f2f2f2;
 }
 
 #social i {
-	font-size: 40px;
-	color: #4a4a4a
+  font-size: 40px;
+  color: #4a4a4a
 }
 
 #social i:hover {
-	color: #1abc9c
+  color: #1abc9c
 }
 
 #footerwrap {
-	padding-top: 70px;
-	padding-bottom: 50px;
-	background-color: #2f2f2f;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background-color: #2f2f2f;
 }
 
 #footerwrap p {
-	color: #f2f2f2;
-	margin-left: 10px;
+  color: #f2f2f2;
+  margin-left: 10px;
 }
 
-#workwrap {	
-	background: url(../img/work.jpg) no-repeat center top;
-	margin-top: -70px;
-	padding-top: 250px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 650px;
-	width: 100%;
-	
+#workwrap { 
+  background: url(../img/projects.jpg) no-repeat center top;
+  margin-top: -70px;
+  padding-top: 250px;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -183,48 +216,57 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #workwrap h1 {
-	color:#ffffff;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	letter-spacing: 4px;
-	font-size: 80px;
-	font-weight: bold;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  letter-spacing: 4px;
+  font-size: 80px;
+  font-weight: bold;
 }
 
 #workwrap h4 {
-	font-weight: 400;
-	color: #ffffff
+  font-weight: 400;
+  color: black;
 }
 
-#aboutwrap {	
-	background: url(../img/about.jpg) no-repeat center top;
-	margin-top: -70px;
-	padding-top: 250px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 550px;
-	width: 100%;
-	
+#aboutwrap {  
+  background: url(../img/about.jpg) no-repeat center top;
+  margin-top: 0px;
+  padding-top: 250px;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }
-
-
-
 
 /* Gallery */
 .gallery {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 .gallery img:hover {
-	opacity: 0.4;
+  opacity: 0.4;
+}
+
+.breedly {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.breedly img {
+  max-width: 400px;
+  padding-bottom: 30px;
 }
