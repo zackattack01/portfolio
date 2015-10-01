@@ -48,7 +48,7 @@ div.thumbnails {
 div.slideshow-container {
   position: relative;
   height: 100%;
-  padding: 125px 20px 100px 20px;
+  padding: 125px 0 100px 0;
 
 }
 
@@ -58,12 +58,13 @@ div.active img {
   box-shadow: 0 0 20px whitesmoke;
 }
 
-.gutter {
+/*.gutter {
   position: relative;
-}
+}*/
 
 .gutter-images img {
   margin-top: 20px;
+  margin-bottom: 50px;
   box-shadow: 0 0 10px whitesmoke;
   width: 20%;
   height: 20%;
@@ -91,14 +92,21 @@ a.nav {
 a.nav:last-child {
   left: 95%;
 }
+
 .gutter-images {
   min-width: 100%;
   position: relative;
   white-space: nowrap;
-  /*left: 5%;*/
   overflow-x: scroll;
-  padding: 0;
   margin: 0;
+}
+
+.gutter-images img:last-child {
+  margin-right: 5px;
+}
+
+.gutter-images img:first-child {
+  margin-left: 5px;
 }
 
 .gutter-images img:hover, a.nav:hover {
