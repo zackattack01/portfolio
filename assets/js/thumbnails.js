@@ -17,6 +17,42 @@
             '<img src="./trip_images/cali3.jpg">',
             '<img src="./trip_images/cali4.jpg">',
             '<img src="./trip_images/cali5.jpg">'
+          ],
+
+    'nv': [
+            '<img src="./trip_images/nevada1.jpg">', 
+            '<img src="./trip_images/nevada2.jpg">',
+            '<img src="./trip_images/nevada3.jpg">',
+            '<img src="./trip_images/nevada4.jpg">',
+            '<img src="./trip_images/nevada_sun1.jpg">',
+            '<img src="./trip_images/nevada_sun2.jpg">',
+            '<img src="./trip_images/nevada_sun3.jpg">',
+            '<img src="./trip_images/nevada_sun4.jpg">',
+            '<img src="./trip_images/nevada_sun5.jpg">'
+          ],
+
+    'ut': [
+          '<img src="./trip_images/utah_morning.jpg">', 
+          '<img src="./trip_images/utah1.jpg">', 
+          '<img src="./trip_images/utah2.jpg">',
+          '<img src="./trip_images/utah3.jpg">',
+          '<img src="./trip_images/utah4.jpg">',
+        ],
+
+    'co': [
+            '<img src="./trip_images/colorado_river.jpg">',
+            '<img src="./trip_images/colorado_river2.jpg">',
+            '<img src="./trip_images/colorado_denver.jpg">',
+            '<img src="./trip_images/colorado1.jpg">',
+            '<img src="./trip_images/colorado2.jpg">'
+          ],
+    
+    'ne': [
+            '<img src="./trip_images/nebraska1.jpg">',
+            '<img src="./trip_images/nebraska2.jpg">',
+            '<img src="./trip_images/nebraska3.jpg">',
+            '<img src="./trip_images/nebraska4.jpg">',
+            '<img src="./trip_images/nebraska5.jpg">'
           ]
   };
 
