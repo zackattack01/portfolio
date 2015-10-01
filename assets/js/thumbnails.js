@@ -52,7 +52,9 @@
             '<img src="./trip_images/nebraska2.jpg">',
             '<img src="./trip_images/nebraska3.jpg">',
             '<img src="./trip_images/nebraska4.jpg">',
-            '<img src="./trip_images/nebraska5.jpg">'
+            '<img src="./trip_images/nebraska5.jpg">',
+            '<img src="./trip_images/nebraska6.jpg">',
+            '<img src="./trip_images/nebraska7.jpg">'
           ]
   };
 
