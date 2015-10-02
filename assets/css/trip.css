@@ -24,12 +24,11 @@ body {
   background-color: white; 
 }
 
-.centered img {
+.centered img, video {
   -webkit-transform: translate(-50%, -50%);
   -moz-transform:    translate(-50%, -50%);
   transform:         translate(-50%, -50%);
 }
-
 
 div.active {
   position: fixed;
@@ -41,7 +40,7 @@ div.active {
   height: 100%;
 }
 
-div.active img {
+div.active img, video {
   position: relative;
   width: 80%;
   left: 50%;
@@ -64,11 +63,11 @@ div.active img {
   width: 20%;
   height: 100%;
   overflow: scroll;
+  box-shadow: 0 0 5px whitesmoke;
 }
 
 .gutter-images img {
   box-shadow: 0 0 5px whitesmoke;
-  margin: 10px 0;
   width: 100%;
   display: block;
 }
@@ -89,7 +88,7 @@ div.active img {
   padding: 15px;
   display: block;
   background-color: white;
-  box-shadow: 5px 0 5px white;
+  box-shadow: 0 0 5px white;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   z-index: 50;
@@ -101,21 +100,37 @@ div.active img {
 
 .toc > li:nth-child(odd) {
   background-color: #D60101;
-  box-shadow: 5px 0 5px #D60101;
+  box-shadow: 0 0 5px #D60101;
 }
 
 .toc > li.active-state {
   color: #000F89;
   text-align: right;
-}
-
-.toc > li:nth-child(odd).active-state {
-  color: white;
+  margin-right: -5px;
 }
 
 .toc h2 {
   text-align: center;
-  margin-top: 50px;
+  font-size: 1.0em;
+  margin-top: 10px;
   margin-bottom: 0;
+  color: #D60101;
+}
+
+.back-link {
+  z-index: 50;
+  position: fixed;
+  top: 5px;
+  left: 20%;
+}
+
+.back-link > a {
   color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  text-shadow: 2px 2px 2px gray;
+}
+
+.time-lapse {
+
 }

@@ -2,14 +2,21 @@
 
   $.Thumbnails = function(el) {
     this.$el = $(el);
-    this.$activeImg = this.$el.find(".gutter-images img:first-child");
-    this.activate(this.$activeImg);
-    this.gutterIdx = 0;
-    this.$images = this.$el.find('.gutter-images img');
-    this.bindCallbacks();
+    $('div.active').html("");
+    if (this.$el.find('.toc li.active-state').data("state") === "tl") {
+      $('div.active').html('<video class="time-lapse" controls><source src="./trip_images/CAtoNY.mp4" type="video/mp4"></video>');
+    } else {
+      this.$activeImg = this.$el.find(".gutter-images img:first-child");
+      this.activate(this.$activeImg);
+      this.gutterIdx = 0;
+      this.$images = this.$el.find('.gutter-images img');
+      this.bindCallbacks();
+    }
    };
 
   $.Thumbnails.STATE_PICS = {
+    'tl': [],
+
     'ca': [
             '<img src="./trip_images/san_leandro_sunset.jpg">', 
             '<img src="./trip_images/sacramento.jpg">',
@@ -55,7 +62,30 @@
             '<img src="./trip_images/nebraska5.jpg">',
             '<img src="./trip_images/nebraska6.jpg">',
             '<img src="./trip_images/nebraska7.jpg">'
-          ]
+          ],
+
+    'ia': [
+            '<img src="./trip_images/iowa1.jpg">',
+            '<img src="./trip_images/iowa2.jpg">',
+            '<img src="./trip_images/iowa3.jpg">',
+            '<img src="./trip_images/iowa4.jpg">',
+            '<img src="./trip_images/iowa5.jpg">',
+            '<img src="./trip_images/iowa6.jpg">',
+            '<img src="./trip_images/iowa7.jpg">',
+            '<img src="./trip_images/iowa8.jpg">'
+          ],
+    
+    'il': [
+            '<img src="./trip_images/illinois1.jpg">',
+            '<img src="./trip_images/illinois2.jpg">',
+            '<img src="./trip_images/illinois3.jpg">',
+            '<img src="./trip_images/illinois4.jpg">',
+            '<img src="./trip_images/illinois5.jpg">',
+            '<img src="./trip_images/illinois6.jpg">',
+            '<img src="./trip_images/illinois7.jpg">',
+            '<img src="./trip_images/illinois8.jpg">'
+            ]
+
   };
 
   $.Thumbnails.prototype.activate = function ($img) {
