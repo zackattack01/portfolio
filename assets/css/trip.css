@@ -125,17 +125,13 @@ div.active iframe {
 .back-link {
   z-index: 50;
   position: fixed;
-  top: 5px;
-  left: 20%;
+  bottom: 10px;
+  left: 20px;
 }
 
 .back-link > a {
-  color: white;
+  color: black;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 0.7em;
   text-shadow: 2px 2px 2px gray;
-}
-
-.time-lapse {
-
 }
