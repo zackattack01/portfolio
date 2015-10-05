@@ -4,7 +4,7 @@
     this.$el = $(el);
     $('div.active').html("");
     if (this.$el.find('.toc li.active-state').data("state") === "tl") {
-      $('div.active').html('<video class="time-lapse" controls><source src="./trip_images/CAtoNY.mp4" type="video/mp4"></video>');
+      $('div.active').html('<iframe src="https://www.youtube.com/embed/G4fUiIDmfyM" frameborder="0" allowfullscreen></iframe>');
     } else {
       this.$activeImg = this.$el.find(".gutter-images img:first-child");
       this.activate(this.$activeImg);

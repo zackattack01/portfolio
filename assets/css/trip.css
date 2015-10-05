@@ -24,7 +24,7 @@ body {
   background-color: white; 
 }
 
-.centered img, video {
+.centered img {
   -webkit-transform: translate(-50%, -50%);
   -moz-transform:    translate(-50%, -50%);
   transform:         translate(-50%, -50%);
@@ -40,7 +40,7 @@ div.active {
   height: 100%;
 }
 
-div.active img, video {
+div.active img {
   position: relative;
   width: 80%;
   left: 50%;
@@ -48,6 +48,11 @@ div.active img, video {
   display: inline-block;
   vertical-align: middle;
   box-shadow: 0 0 5px whitesmoke;
+}
+
+div.active iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .group:after {
